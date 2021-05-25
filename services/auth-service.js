@@ -3,8 +3,8 @@ const {
   checkPasswordSimilarity,
   hashPassword,
   correctPassword,
-} = require('../utils/password');
-const UsersDAO = require('../dao/UsersDAO');
+} = require('../utils/password-utils');
+const UsersDAO = require('../dao/usersDAO');
 
 const generateJWT = (userID) =>
   jwt.sign({ userID }, process.env.JWT_SECRET, { expiresIn: '2h' });

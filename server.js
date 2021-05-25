@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 const dotenv = require('dotenv');
 
-const UsersDAO = require('./dao/UsersDAO');
+const UsersDAO = require('./dao/usersDAO');
 
 dotenv.config({
   path: './config/config.env',

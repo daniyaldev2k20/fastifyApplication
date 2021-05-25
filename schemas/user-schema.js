@@ -46,7 +46,7 @@ const login = {
         message: { type: 'string' },
         name: { type: 'string' },
         email: { type: 'string' },
-        token: { type: 'string' },
+        jwt: { type: 'string' },
       },
       additionalProperties: false,
     },

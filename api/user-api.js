@@ -55,7 +55,7 @@ async function userRoutes(fastify, options) {
 
   fastify.route({
     method: 'GET',
-    url: '/login',
+    url: '/logout',
     handler: function (request, reply) {
       reply
         .setCookie('jwt', 'loggedOut', {
